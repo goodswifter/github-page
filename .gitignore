@@ -31,6 +31,6 @@ tsconfig.tsbuildinfo
 r.ts
 
 # 配置文件
-pnpm-lock.yaml
+# pnpm-lock.yaml
 # vscode 配置文件
 !settings.json
