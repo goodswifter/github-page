@@ -48,7 +48,7 @@ export const getPluginsList = (VITE_COMPRESSION: ViteCompression = 'gzip'): Plug
         },
         { '@/assets/r': ['R'] },
       ],
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver({ importStyle: 'sass' })],
       // eslintrc: { enabled: true },
       dirs: [{ glob: 'src/enums/**' }, 'src/composables', 'src/stores'],
       dts: 'typings/auto-imports.d.ts',
@@ -58,7 +58,7 @@ export const getPluginsList = (VITE_COMPRESSION: ViteCompression = 'gzip'): Plug
     Components({
       extensions: ['svg'], // 要处理的扩展名
       resolvers: [
-        ElementPlusResolver(),
+        ElementPlusResolver({ importStyle: 'sass' }),
         IconsResolver({ enabledCollections: ['ep', 'mdi'] }),
         {
           type: 'component',
